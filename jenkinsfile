@@ -72,7 +72,7 @@ pipeline {
                             set -e
                             . venv/bin/activate
                             echo "Flask app will run for 60 seconds..."
-                            timeout 600s python app.py || echo "App terminated after timeout, ignoring error"
+                            timeout 60s python app.py || echo "App terminated after timeout, ignoring error"
                         '''
                     }
                 }
