@@ -1,5 +1,6 @@
 pipeline {
-    agent {label 'Python'}
+    #agent {label 'Python'}
+	agent any
 
     environment {
         REPO_URL = "https://github.com/dmbetsi/python-app.git"
